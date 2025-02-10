@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+    .container {
+        @apply mx-auto p-4;
+    }
+    .btn {
+        @apply bg-[#42b0d0] font-bold hover:bg-[#8cdae4] rounded-[30px] transition-all duration-200;
+    }
+    .center-content {
+        @apply flex justify-center items-center;
+    }
+}
+
+:root {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #181e2a;
+}
