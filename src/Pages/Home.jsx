@@ -7,7 +7,7 @@ function Home() {
       <section className="bg-[#1c2230] pt-[120px]">
         <div className="container mx-auto px-[30px]">
           <div className="flex items-center justify-center">
-            <img src="src/assets/images/landing.png" alt="landing-img" className="max-w-[400px] w-[80%]" />
+            <img src="images/landing.png" alt="landing-img" className="max-w-[400px] w-[80%]" />
           </div>
           <div className="text-white text-center flex flex-col items-center">
             <h1 className="text-[25px] md:text-[35px] font-extrabold my-[15px]">
@@ -23,7 +23,7 @@ function Home() {
             <Button text="Get Started" to="/" />
           </div>
         </div>
-        <img src="src/assets/images/bg-curvy-desktop.svg" alt="curvy-img"
+        <img src="images/bg-curvy-desktop.svg" alt="curvy-img"
             className='w-full h-[25vw] max-h-[200px]'/>
       </section>
     </>

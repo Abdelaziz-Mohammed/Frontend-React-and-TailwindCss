@@ -33,7 +33,7 @@ function Testimonials() {
     <section className="py-[60px]" id="testimonials">
       <div className="container relative">
         <div className="absolute left-[10px] top-[-15px]">
-            <img src="src/assets/images/bg-quotes.png" alt="quotes-img" />
+            <img src="images/bg-quotes.png" alt="quotes-img" />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] w-fit mx-auto relative z-1">
             {

@@ -34,12 +34,12 @@ function Footer() {
     <section className="pb-[60px] bg-[#0c1524]">
       <div className="container pl-[50px] ms:pl-0">
         <a href="#home">
-          <img src="src/assets/images/logo.svg" alt="logo-img"
+          <img src="images/logo.svg" alt="logo-img"
             className="w-[175px] h-[65px] object-contain"/>
         </a>
         <div className="text-white pt-[30px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:items-start lg:grid-cols-4 gap-[50px]">
           <div className="flex items-center gap-[12px]">
-            <img src="src/assets/images/icon-location.svg" alt="location-img"
+            <img src="images/icon-location.svg" alt="location-img"
               className="w-[18px] h-[18px] object-contain"/>
             <p className="font-normal text-sm tracking-[0.6px]">
               123 Main St, Anytown, Egypt
@@ -49,7 +49,7 @@ function Footer() {
             {
               contacts.map(contact => <div key={contact.id}
                 className="flex items-center justify-start gap-3 mb-3 last-of-type:mb-0">
-                <img src={`src/assets/images/${contact.icon}`} alt="icon-img"
+                <img src={`images/${contact.icon}`} alt="icon-img"
                 className="w-[] h-[] object-contain"/>
                 <p className="font-normal text-sm">
                   {contact.text}
