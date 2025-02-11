@@ -30,7 +30,7 @@ function Features() {
     },
   ]);
   return (
-    <section className="mb-[60px]">
+    <section className="mb-[60px]" id="features">
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-[50px] md:w-[650px] mx-auto">
           {

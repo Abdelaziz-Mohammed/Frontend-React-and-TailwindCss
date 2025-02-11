@@ -23,7 +23,7 @@ function Home() {
             <Button text="Get Started" to="/" />
           </div>
         </div>
-        <img src="/src/assets/images/bg-curvy-desktop.svg" alt="curvy-img"
+        <img src="src/assets/images/bg-curvy-desktop.svg" alt="curvy-img"
             className='w-full h-[25vw] max-h-[200px]'/>
       </section>
     </>

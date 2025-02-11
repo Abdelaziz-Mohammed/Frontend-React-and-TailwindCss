@@ -3,7 +3,7 @@ import Button from "../Components/Button"
 
 function GetStarted() {
   return (
-    <section className="py-[60px] relative">
+    <section className="py-[60px] relative" id="get-started">
       <div className="absolute bg-[#0c1524] w-full h-[50%] left-0 bottom-0"></div>
       <div className="container relative z-1">
         <div className="bg-[#1c2230] text-white text-center rounded-[12px] shadow-[0_10px_20px_rgba(0,0,0,0.5)] p-[50px]
