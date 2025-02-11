@@ -67,7 +67,7 @@ function Footer() {
           </div>
           <div className="flex flex-wrap items-center gap-3">
             {
-              socials.map(social => <a key={social.id} className="group">
+              socials.map(social => <a key={social.id} className="group" href='/'>
                 <div className="w-[30px] h-[30px] rounded-full center-content border-[1px] cursor-pointer border-primaryColor">
                   {
                     social.name === 'linkedin' ?
