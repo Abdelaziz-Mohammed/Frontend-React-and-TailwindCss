@@ -5,23 +5,24 @@ function Header() {
   const [links] = useState(["Features", "Team", "SignIn"]);
   const headerRef = useRef(null);
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        headerRef.current.style.backgroundColor = "#0c1524";
-        headerRef.current.style.boxShadow = "0 0 15px rgba(0, 174, 255, 0.6)";
-        headerRef.current.style.padding = "0";
+     const handleScroll = () => {
+      if (headerRef.current) {
+        if (window.scrollY > 0) {
+          headerRef.current.style.backgroundColor = "#0c1524";
+          headerRef.current.style.boxShadow = "0 0 15px rgba(0, 174, 255, 0.6)";
+          headerRef.current.style.padding = "0";
+        } else {
+          headerRef.current.style.backgroundColor = "#181e2a";
+          headerRef.current.style.boxShadow = "";
+          headerRef.current.style.padding = window.innerWidth > 576 ? "40px 0 0" : "10px 0 0";
+        }
       }
-      else {
-        headerRef.current.style.backgroundColor = "#181e2a";
-        headerRef.current.style.boxShadow = "";
-        headerRef.current.style.padding = (window.innerWidth > 576) ? "40px 0 0" : "10px 0 0";
-      }
-    }
+    };
+
     window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    }
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
   function handleNavigate(link) {
     if (link === 'Features') {
       window.scrollTo({
